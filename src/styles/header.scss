@@ -1,0 +1,78 @@
+.header__page {
+   padding: 7px 0 8px;
+   background: #0067A3;
+}
+.header__title {
+   display: flex;
+   align-items: center;
+}
+.header__title-h {
+   @include adaptiveFont(28, 20);
+}
+.header__profile {
+   position: relative;
+   @extend %flexCenter;
+}
+.header__profile-icon {
+   margin-right: 24px;
+}
+.acordion-icon {
+   width: 24px;
+   height: 24px;   
+   &::after {
+      content:""; 
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      right: 0;
+      top: 50%;
+      border-bottom: 3px solid #fff;
+      border-left: 3px solid #fff;
+      transform:  rotate(315deg) translateY(-50%);
+      cursor: pointer;
+   }
+}
+.acordion-icon-active {
+   &::after {
+      content:""; 
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      right: 15%;
+      top: 50%;
+      border-bottom: 3px solid #fff;
+      border-left: 3px solid #fff;
+      transform:  rotate(135deg) translate(-50%,  -50%);
+      cursor: pointer;
+   }
+}
+.header__portfolio-board {
+   position: absolute;
+   bottom: -185%;
+   right: 0;
+   width: 134px;
+   border-radius: 5px;
+   background: #FFF;
+   padding: 8px 7px 5px;
+}
+.header__portfolio-board-list {
+   position: relative;
+   &::after {
+      content:""; 
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      right: 30%;
+      top: -20%;
+      transform: rotate(45deg) translateY(-50%);
+      background: #FFF;
+   }
+}
+.header__portfolio-board-link {
+   color: #000;
+   @include adaptiveFont(14, 12);
+   &:hover {
+      color: #605e5e;
+      @include adaptiveFont(16, 14);
+   }
+}

@@ -1,0 +1,103 @@
+.board__page {
+   padding: 15px 0 32px;
+}
+.boarder__body {
+   gap: 24px;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.boarder__card {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   flex: 1 1 auto;
+   min-width: 280px;
+   padding: 12px 12px 8px;
+   border-radius: 10px;
+   background: #EBECF0;
+}
+.card__title {
+   color: #000;
+   @include adaptiveFont(18, 14);
+}
+.card__list {
+   @extend %flexColumnCommon;
+   flex: 1 1 auto;
+   gap: 15px;
+   margin: 15px 0;
+}
+.taskLink {
+	text-decoration: none;
+   color: #000;
+   @include adaptiveFont(18, 14);
+}
+.card__paragraph {
+   padding: 7px 8px;
+   border-radius: 5px;
+   background: #FFF;
+   cursor: pointer;
+}
+.form__group {
+   @extend %flexColumnCommon;
+   gap: 20px;
+}
+.card__input {
+   @include adaptiveFont(18, 14);
+   border-bottom: #000 solid 1px;
+   width: 100%;
+}
+.card__textarea {
+   resize: none;
+}
+.card__button {
+   display: flex;
+   align-items: center;
+   gap: 3px;
+   margin-top: 17px;
+   padding: 5px 4px;
+   color: #5E6C84;
+   background-color: initial;
+   @include adaptiveFont(18, 14);
+   cursor: pointer;
+   &:hover {
+      border-radius: 5px;
+      background-color: #fff;;
+   }
+}
+.card__button-form {
+   @extend %flexCenter;
+   min-width: 108px;
+   margin-top: 17px;
+   padding: 5px 4px;
+   background: #0079bfa9;  
+   border-radius: 5px; 
+   color: #FFF;
+   @include adaptiveFont(18, 14);
+   cursor: default;
+}
+.card__button-form-active {
+   @extend %flexCenter;
+   min-width: 108px;
+   margin-top: 17px;
+   padding: 5px 4px;
+   border-radius: 5px;
+   background: #0079BF;   
+   border-radius: 5px;
+   color: #FFF;
+   @include adaptiveFont(18, 14);
+   cursor: pointer;
+   &:hover {
+      background: #0079bfa9;   
+   }
+}
+.css-1u9des2-indicatorSeparator {
+   display: none;
+}
+.my-select__option {
+   color: #000 !important;
+   cursor: pointer !important;
+   @include adaptiveFont(18, 14);
+}
+.my-select__option--is-focused {
+   background: #DEDEDE !important;
+}

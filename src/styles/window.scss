@@ -1,0 +1,76 @@
+.page-task__page {
+   padding: 22px 0px;
+}
+.page-task__container {
+   padding: 22px 30px;
+   border-radius: 5px;
+   background: #FFF;
+}
+.page-task__body {
+   @extend %flexColumnCommon;
+   gap: 35px;
+}
+.page-task__clouse {
+   position: relative;
+   &::before,
+   &::after {
+     content: "";
+     position: absolute;
+     top: 5px;
+     right: -1.7%;
+     width: 30px;
+     height: 1px;
+     background-color: black;
+     cursor: pointer;
+   }
+   
+   &::before {
+     transform: translate(-50%, -50%) rotate(45deg);
+   }
+   
+   &::after {
+     transform: translate(-50%, -50%) rotate(-45deg);
+   }
+}
+.page-task__title-h {
+   color: #000;
+   @include adaptiveFont(24, 20);
+}
+.page-task__contant-p {
+   width: 56%;
+   color: #000;
+   @include adaptiveFont(18, 16);
+}
+.input__edit {
+   width: 100%;
+   padding: 7px 8px;
+   color: #000;
+   @include adaptiveFont(18, 14);
+   border: #c0cadc solid 2px;
+   border-radius: 5px;
+   background: #FFF;
+   &:focus {
+      outline: none;
+      border-color: #5E6C84;
+      box-shadow: 0 0 4px #5E6C84;
+   }
+}
+.page-task__button {
+   display: flex;
+   justify-content: flex-end;
+}
+.page-task__btn {
+   @extend %flexCenter;
+   min-width: 108px;
+   margin-top: 17px;
+   padding: 10px 15px;
+   border-radius: 5px;
+   background: #0079BF;   
+   border-radius: 5px;
+   color: #FFF;
+   @include adaptiveFont(18, 14);
+   cursor: pointer;
+   &:hover {
+      background: #0079bfa9;   
+   }
+}

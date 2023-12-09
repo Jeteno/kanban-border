@@ -1,0 +1,17 @@
+.footer__page {
+   width: 100%;
+   background: #0067A3;
+   padding: 17px 19px 17px 21px;
+}
+.footer__body {
+   flex-wrap: wrap;
+   gap: 20px;
+}
+.footer__title-task {
+   display: flex;
+   align-items: center;
+   gap: 36px;
+}
+.footer__title-h {
+   @include adaptiveFont(18, 20);
+}
